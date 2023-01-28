@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- New Game Screen -->
-    <!-- <section id="ttt-new_game_screen">
+    <section id="ttt-new_game_screen">
       <h1 class="new_game-title">Tic Tac Toe</h1>
       <div class="new_game-mark_selector">
         <p class="new_game-mark_selector-label">Pick players 1's mark</p>
@@ -37,7 +37,7 @@
         <button class="new_game-vs_cpu btn">New Game (vs cpu)</button>
         <button class="new_game-vs_player btn">New Game (vs player)</button>
       </div>
-    </section> -->
+    </section>
 
     <!-- Game Board Screen -->
     <section id="ttt-game_board_screen">
@@ -47,20 +47,18 @@
             <img class="info_turn-icon" src="assets/ttt-x.svg" />
             <span>Turn</span>
           </div>
-          <button class="info-restart btn">
-            <img src="assets/ttt-refresh.svg" />
-          </button>
+          <button class="info-quit btn">Quit</button>
         </div>
-        <div class="ttt-game_board">
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
-          <div class="ttt-game_square"></div>
+        <div id="gb" class="ttt-game_board">
+          <div id="square_1" class="ttt-game_square"></div>
+          <div id="square_2" class="ttt-game_square"></div>
+          <div id="square_3" class="ttt-game_square"></div>
+          <div id="square_4" class="ttt-game_square"></div>
+          <div id="square_5" class="ttt-game_square"></div>
+          <div id="square_6" class="ttt-game_square"></div>
+          <div id="square_7" class="ttt-game_square"></div>
+          <div id="square_8" class="ttt-game_square"></div>
+          <div id="square_9" class="ttt-game_square"></div>
         </div>
         <div class="ttt-stats">
           <div class="stats-x_score_container">
@@ -80,7 +78,7 @@
     </section>
 
     <!-- Game Over Screen -->
-    <!-- <section id="ttt-game_over_screen">
+    <section id="ttt-game_over_screen">
       <main class="game_over_container">
         <p class="game_over-status">You Won!</p>
         <div class="game_over-winner">
@@ -92,7 +90,7 @@
           <button class="game_over-next_round btn">Next Round</button>
         </div>
       </main>
-    </section> -->
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
