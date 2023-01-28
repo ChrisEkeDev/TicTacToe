@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="'styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/8e638e9503.js"
       crossorigin="anonymous"
@@ -14,19 +20,18 @@
   <body>
     <!-- New Game Screen -->
     <section id="ttt-new_game_screen">
-      <h1 class="new_game-title">New Game</h1>
-      <img class="new_game-logo" src="assets/ttt-logo.svg" />
+      <h1 class="new_game-title">Tic Tac Toe</h1>
       <div class="new_game-mark_selector">
-        <p>Pick players 1's mark</p>
+        <p class="new_game-mark_selector-label">Pick players 1's mark</p>
         <div class="new_game-mark_selector-toggle">
-          <div class="mark_selector selected">
+          <div id="x_mark" class="mark_selector selected">
             <img src="assets/ttt-x.svg" />
           </div>
-          <div class="mark_selector">
+          <div id="o_mark" class="mark_selector unselected">
             <img src="assets/ttt-o.svg" />
           </div>
         </div>
-        <p class="new_game-mark_selector-info">X goes first</p>
+        <p class="new_game-mark_selector-info">remember X goes first</p>
       </div>
       <div class="new_game-actions">
         <button class="new_game-vs_cpu btn">New Game (vs cpu)</button>
@@ -35,7 +40,7 @@
     </section>
 
     <!-- Game Board Screen -->
-    <section id="ttt-game">
+    <section id="ttt-game_board_screen">
       <div class="ttt-info">
         <img class="info_logo" src="assets/ttt-logo.svg" />
         <div class="info_turn_indicator">
@@ -74,7 +79,7 @@
     </section>
 
     <!-- Game Over Screen -->
-    <section id="ttt-game_over">
+    <section id="ttt-game_over_screen">
       <p class="game_over-status">You Won!</p>
       <div class="game_over-winner">
         <img class="game_over-winner" src="assets/ttt-x.svg" />

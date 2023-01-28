@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #192A32;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+* {
+    transition: all .2s;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* New Game Styles  */
+
+#ttt-new_game_screen,
+#ttt-game_board_screen,
+#ttt-game_over_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ttt-game_board_screen,
+#ttt-game_over_screen {
+    display: none;
+}
+
+#ttt-new_game_screen {
+    gap: 25px;
+}
+.new_game-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #A8BEC9;
+}
+.new_game-logo {
+    height: 50px;
+}
+
+.new_game-mark_selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F3540;
+    width: 500px;
+    border-radius: 10px;
+    gap: 25px;
+    padding: 25px;
+    box-shadow: 0 5px 0 #0F1F2A;
+}
+
+.new_game-mark_selector-label {
+    font-weight: 700;
+    color: #A8BEC9;
+}
+.new_game-mark_selector-toggle {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background-color: #192A32;
+    border-radius: 10px;
+}
+.mark_selector {
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.unselected {
+    opacity: .25;
+    transform: scale(.7, .7);
+}
+
+.mark_selector:hover {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+.mark_selector img {
+    height: 50px;
+}
+
+.new_game-mark_selector-info {
+    font-weight: 700;
+    color: #708A95;
+}
+
+.new_game-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 70px;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    color: #192A32;
+    cursor: pointer;
+}
+
+
+.new_game-vs_cpu {
+    background-color: #F5B337;
+    box-shadow: 0 5px 0 #C08619;
+}
+.new_game-vs_cpu:hover {
+    background-color: #C08619;
+}
+
+.new_game-vs_player {
+    background-color: #2CC6BE;
+    box-shadow: 0 5px 0 #189C95;
+}
+
+.new_game-vs_player:hover {
+    background-color: #189C95;
+}
+
+.btn:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* Game Board Styles */
+
+
+/* Game Over Styles */
