@@ -5,10 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="'styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8e638e9503.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
-    <main></main>
+    <!-- New Game Screen -->
+    <section id="ttt-new_game_screen">
+      <h1 class="new_game-title">New Game</h1>
+      <img class="new_game-logo" src="assets/ttt-logo.svg" />
+      <div class="new_game-mark_selector">
+        <p>Pick players 1's mark</p>
+        <div class="new_game-mark_selector-toggle">
+          <div class="mark_selector selected">
+            <img src="assets/ttt-x.svg" />
+          </div>
+          <div class="mark_selector">
+            <img src="assets/ttt-o.svg" />
+          </div>
+        </div>
+        <p class="new_game-mark_selector-info">X goes first</p>
+      </div>
+      <div class="new_game-actions">
+        <button class="new_game-vs_cpu btn">New Game (vs cpu)</button>
+        <button class="new_game-vs_player btn">New Game (vs player)</button>
+      </div>
+    </section>
+
+    <!-- Game Board Screen -->
+    <section id="ttt-game">
+      <div class="ttt-info">
+        <img class="info_logo" src="assets/ttt-logo.svg" />
+        <div class="info_turn_indicator">
+          <img class="info_turn-icon" src="assets/ttt-x.svg" />
+          <span>Turn</span>
+        </div>
+        <button class="info-restart btn">
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+      </div>
+      <div class="ttt-game_board">
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+        <div class="tt-game_square"></div>
+      </div>
+      <div class="ttt-stats">
+        <div class="stats-x_score_container">
+          <p class="stats-x_label">X(You)</p>
+          <p class="stats-x_score">33</p>
+        </div>
+        <div class="stats-ties_container">
+          <p class="stats-ties_label">Ties</p>
+          <p class="stats-ties">33</p>
+        </div>
+        <div class="stats-o_score_container">
+          <p class="stats-o_label">O(Cpu)</p>
+          <p class="stats-o_score">33</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Over Screen -->
+    <section id="ttt-game_over">
+      <p class="game_over-status">You Won!</p>
+      <div class="game_over-winner">
+        <img class="game_over-winner" src="assets/ttt-x.svg" />
+        <p>Takes the Round</p>
+      </div>
+      <div class="game_over-actions">
+        <button class="game_over-quit btn">Quit</button>
+        <button class="game_over-next_round btn">Next Round</button>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
