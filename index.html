@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- New Game Screen -->
-    <section id="ttt-new_game_screen">
+    <!-- <section id="ttt-new_game_screen">
       <h1 class="new_game-title">Tic Tac Toe</h1>
       <div class="new_game-mark_selector">
         <p class="new_game-mark_selector-label">Pick players 1's mark</p>
@@ -37,59 +37,62 @@
         <button class="new_game-vs_cpu btn">New Game (vs cpu)</button>
         <button class="new_game-vs_player btn">New Game (vs player)</button>
       </div>
-    </section>
+    </section> -->
 
     <!-- Game Board Screen -->
     <section id="ttt-game_board_screen">
-      <div class="ttt-info">
-        <img class="info_logo" src="assets/ttt-logo.svg" />
-        <div class="info_turn_indicator">
-          <img class="info_turn-icon" src="assets/ttt-x.svg" />
-          <span>Turn</span>
+      <main class="game_board_container">
+        <div class="ttt-info">
+          <div class="info_turn_indicator">
+            <img class="info_turn-icon" src="assets/ttt-x.svg" />
+            <span>Turn</span>
+          </div>
+          <button class="info-restart btn">
+            <img src="assets/ttt-refresh.svg" />
+          </button>
         </div>
-        <button class="info-restart btn">
-          <i class="fa-solid fa-arrow-rotate-right"></i>
-        </button>
-      </div>
-      <div class="ttt-game_board">
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-        <div class="tt-game_square"></div>
-      </div>
-      <div class="ttt-stats">
-        <div class="stats-x_score_container">
-          <p class="stats-x_label">X(You)</p>
-          <p class="stats-x_score">33</p>
+        <div class="ttt-game_board">
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
+          <div class="ttt-game_square"></div>
         </div>
-        <div class="stats-ties_container">
-          <p class="stats-ties_label">Ties</p>
-          <p class="stats-ties">33</p>
+        <div class="ttt-stats">
+          <div class="stats-x_score_container">
+            <p class="stats-x_label">X (You)</p>
+            <p class="stats-x_score">0</p>
+          </div>
+          <div class="stats-ties_container">
+            <p class="stats-ties_label">Ties</p>
+            <p class="stats-ties">0</p>
+          </div>
+          <div class="stats-o_score_container">
+            <p class="stats-o_label">O (Cpu)</p>
+            <p class="stats-o_score">0</p>
+          </div>
         </div>
-        <div class="stats-o_score_container">
-          <p class="stats-o_label">O(Cpu)</p>
-          <p class="stats-o_score">33</p>
-        </div>
-      </div>
+      </main>
     </section>
 
     <!-- Game Over Screen -->
-    <section id="ttt-game_over_screen">
-      <p class="game_over-status">You Won!</p>
-      <div class="game_over-winner">
-        <img class="game_over-winner" src="assets/ttt-x.svg" />
-        <p>Takes the Round</p>
-      </div>
-      <div class="game_over-actions">
-        <button class="game_over-quit btn">Quit</button>
-        <button class="game_over-next_round btn">Next Round</button>
-      </div>
-    </section>
+    <!-- <section id="ttt-game_over_screen">
+      <main class="game_over_container">
+        <p class="game_over-status">You Won!</p>
+        <div class="game_over-winner">
+          <img class="winner_icon" src="assets/ttt-x.svg" />
+          <p class="winner_text">Takes the Round</p>
+        </div>
+        <div class="game_over-actions">
+          <button class="game_over-quit btn">Quit</button>
+          <button class="game_over-next_round btn">Next Round</button>
+        </div>
+      </main>
+    </section> -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 /* New Game Scripts */
-
+let xColor = '#2CC6BE';
+let oColor = '#F5B337';
 let player1mark = 'x';
 let xSelector = document.getElementById('x_mark');
 let oSelector = document.getElementById('o_mark');
@@ -53,5 +54,21 @@ playerGameBtn.addEventListener('click', function() {
 
 /* Game Board Scripts */
 
+let currentTurn = 'x';
+let xWins = 0;
+let oWins = 0;
+let ties = 0;
+let gameSquares = document.querySelectorAll('.ttt-game_square');
 
 /* Game Over Scripts */
+
+let quitBtn = document.querySelector('.game_over-quit');
+let nextRoundBtn = document.querySelector('.game_over-next_round');
+
+quitBtn.addEventListener('click', function() {
+
+})
+
+nextRoundBtn.addEventListener('click', function() {
+
+})
